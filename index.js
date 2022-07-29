@@ -26,7 +26,7 @@ const server = http.createServer((req, res) => {
         res.write(fs.readFileSync(`./${PAGE_404}`).toString());
         res.end();
     }
-}).listen(5600);
+}).listen(8080);
 
 const io = new socket.Server(server);
 
