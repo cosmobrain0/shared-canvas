@@ -27,7 +27,7 @@ const server = http.createServer((req, res) => {
     //     res.write(fs.readFileSync(`./${PAGE_404}`).toString());
     //     res.end();
     // }
-    res.writeHead(200, {'Content-Type': contentType});
+    res.writeHead(200, {'Content-Type': 'text/html'});
     res.write(`<html><head><title>Hello World</title></head><body><h1>Test Webpage</h1></body></html>`);
     res.end();
 }).listen(process.env.PORT ? process.env.PORT : 8080);
